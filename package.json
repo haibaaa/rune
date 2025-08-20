@@ -3,10 +3,18 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "server": "bun run src/server/index.ts",
+    "client": "bun run src/client/index.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "plugboard.io": "^1.0.1",
+    "socket.io-client": "^4.8.1"
   }
 }
